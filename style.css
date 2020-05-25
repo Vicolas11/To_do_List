@@ -1,0 +1,85 @@
+html  {
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+*,*::before,*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: linear-gradient(90deg,#000000 40%,#8B0000 60%) repeat;
+  background-size: cover;
+  }
+
+.TODO-wrapper {
+  margin: 180px auto;
+  max-width: 300px;
+  background: snow;
+  box-shadow: 1px 2px 5px #000000;
+}
+
+.TODO-wrapper h2  {
+  padding-left: 12px;
+  background: Steelblue;
+  margin: 0 0;
+  padding: 10px;
+  color: #ffffff;
+}
+
+#add {
+  margin-left: 110px;
+}
+
+#add img {
+  width: 25px;
+}
+
+.removed {
+  display: none;
+  cursor: default;
+}
+
+.removed img {
+  position: relative;
+  top: 9px;
+  width: 30px;
+}
+
+input {
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  color: Steelblue;
+  background: #d3d3d3;
+}
+
+input:focus {
+  border: 2px solid Steelblue;
+  background: #ffffff;
+  outline: none;
+}
+
+.TODO-wrapper ul {
+  list-style: none;
+  margin-left: -40px;
+  margin-top: -1px;
+}
+
+.TODO-wrapper li  {
+  padding: 5px 20px;
+  line-height: 30px;
+}
+
+.TODO-wrapper li:hover  {
+  cursor: cell;
+}
+
+.TODO-wrapper li:nth-child(2n+2) {
+  background: #d3d3d3;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
